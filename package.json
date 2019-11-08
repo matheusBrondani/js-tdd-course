@@ -4,7 +4,8 @@
   "description": "Biblioteca do curso de JS com TDD na prática",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "yarn run eslint src/*.js",
+    "prepush": "yarn run lint"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/matheusBrondani/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/matheusBrondani/js-tdd-course#readme"
+  "homepage": "https://github.com/matheusBrondani/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.9"
+  },
+  "dependencies": {}
 }
